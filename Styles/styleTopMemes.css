@@ -1,0 +1,183 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding-bottom: 100px;
+}
+h1 {
+    color: #4CAF50;
+    font-weight: bolder;
+    font-size: 75px;
+    text-align: center;
+}
+
+ul {
+    list-style-type:none;
+    display:flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li a {
+    display: block;
+    color: #4CAF50;
+    font-size: 32px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#container {
+    color: white;
+    border-radius: 25px;
+    padding: 2%;
+    margin: 20px auto;
+    width: 1400px;
+    background-color: #4CAF50;
+}
+
+button {
+    display: block;
+    margin: 2% auto 4%;
+    padding: 12px 24px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 32px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 3px solid white;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+button:active {
+    background-color: #2e6b31;
+}
+
+#meme-table {
+    margin: 0 auto;
+}
+
+.meme-table {
+    border-collapse: collapse;
+}
+
+.meme-table td {
+    padding: 1%;
+    margin: 1%;
+}
+
+.meme-image {
+    border: 2px solid black;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 200px;
+}
+
+.image-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.image-container img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    margin: auto;
+    cursor: pointer;
+}
+
+.image-container img:hover {
+    opacity: 1; /* Set the opacity to 1 when the mouse hovers over the image */
+}
+
+#meme-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#meme-container img {
+    width: 25%;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+#footerContainer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    background: black;
+    width: 98%;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    margin: 5% 1% 1%;
+    display: flex; /* or inline-block */
+    align-items: center; /* align items vertically */
+    justify-content: center;
+}
+
+#footerContainer p {
+    margin-right: 32px;
+}
+
+#footerContainer a {
+    color: white;
+    margin-right: 32px;
+}
+
+@media screen and (max-width: 1400px) {
+    body {
+        font-size: 200%;
+    }
+
+    .navMenu {
+        padding-bottom: 10%;
+    }
+
+    #container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    button {
+        font-size: 80%;
+    }
+
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: auto;
+    }
+}
+

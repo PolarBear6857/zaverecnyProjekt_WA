@@ -1,0 +1,145 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    background-color: black;
+    margin: 0;
+    padding-bottom: 100px;
+}
+
+h1 {
+    color: #4CAF50;
+    font-weight: bolder;
+    font-size: 75px;
+    text-align: center;
+}
+
+ul {
+    list-style-type:none;
+    display:flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li a {
+    display: block;
+    color: #4CAF50;
+    font-size: 32px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+#container {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 25px;
+    padding: 2%;
+    margin: 20px auto;
+    width: 600px;
+}
+
+.meme-generator {
+    margin: 20px auto;
+    width: 400px;
+    font-family: SansSerif, serif;
+}
+
+.meme-generator label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.meme-generator input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#imageFileInput {
+    font-size: 20px;
+}
+
+#topTextInput{
+    font-size: 20px;
+}
+
+#bottomTextInput {
+    font-size: 20px;
+}
+
+#memeLabel {
+    font-family: SansSerif, serif;
+}
+
+#meme {
+    border-radius: 25px;
+    width: 100%;
+    padding: 2%;
+    border: 3px solid white;
+
+}
+
+
+#footerContainer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    background: black;
+    width: 98%;
+    border: 2px solid white;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    margin: 5% 1% 1%;
+    display: flex; /* or inline-block */
+    align-items: center; /* align items vertically */
+    justify-content: center;
+}
+
+#footerContainer p {
+    margin-right: 32px;
+}
+
+#footerContainer a {
+    color: white;
+    margin-right: 32px;
+}
+
+@media screen and (max-width: 1400px) {
+    body {
+        font-size: 200%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .meme-generator label {
+        font-size: 100%;
+    }
+
+    #imageFileInput {
+        font-size: 70%;
+    }
+
+    #topTextInput {
+        font-size: 100%;
+    }
+
+    #bottomTextInput {
+        font-size: 100%;
+    }
+
+}

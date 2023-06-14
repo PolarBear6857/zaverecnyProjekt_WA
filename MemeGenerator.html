@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MEME GENERATOR</title>
+    <link rel="stylesheet" href="Styles/styleMemeGenerator.css">
+</head>
+<body>
+<h1>MEME GENERATOR</h1>
+<div class="navMenu">
+    <ul>
+        <li><a href="MemeGenerator.html">Meme Generator</a></li>
+        <li><a href="TopMemes.html">Top memes</a></li>
+    </ul>
+</div>
+<div id="container">
+    <div class="meme-generator">
+        <label>Select an image</label>
+        <div style="border: 2px solid white; border-radius: 25px; padding-top: 5%; padding-left: 10%; margin-bottom: 3%;">
+            <input type="file" id="imageFileInput">
+        </div>
+        <label>Edit top and bottom text</label>
+        <div style="border: 2px solid white; border-radius: 25px; padding: 5%; margin-bottom: 3%;">
+            <label>Top text</label>
+            <input type="text" id="topTextInput">
+            <label>Bottom text</label>
+            <input type="text" id="bottomTextInput">
+        </div>
+        <label id="memeLabel">Your meme</label>
+        <canvas id="meme"></canvas>
+    </div>
+</div>
+<div id="footerContainer">
+    <p>&copy; Martin Krúpa 2023</p>
+    <a href="https://youtu.be/OVh0bMNSFss?autoplay=1" target="_blank"><img src="gigachad.jpg" alt="gigachad easter egg"
+                                                                           style="height: 32px"></a>
+    <a href="https://github.com/PolarBear6857/" target="_blank">GitHub</a>
+</div>
+<script src="Scripts/scriptMemeGenerator.js"></script>
+</body>
+</html>
